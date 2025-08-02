@@ -1,45 +1,73 @@
-# counter_dapp
+# counter\_dapp
 
-This starter full stack project has been generated using AlgoKit. See below for default getting started instructions.
+A full-stack starter project built using **AlgoKit** to help you develop decentralized applications on **Algorand** using **Python** and **React**.
 
-## Setup
 
-### Initial setup
-1. Clone this repository to your local machine.
-2. Ensure [Docker](https://www.docker.com/) is installed and operational. Then, install `AlgoKit` following this [guide](https://github.com/algorandfoundation/algokit-cli#install).
-3. Run `algokit project bootstrap all` in the project directory. This command sets up your environment by installing necessary dependencies, setting up a Python virtual environment, and preparing your `.env` file.
-4. In the case of a smart contract project, execute `algokit generate env-file -a target_network localnet` from the `counter_dapp-contracts` directory to create a `.env.localnet` file with default configuration for `localnet`.
-5. To build your project, execute `algokit project run build`. This compiles your project and prepares it for running.
-6. For project-specific instructions, refer to the READMEs of the child projects:
-   - Smart Contracts: [counter_dapp-contracts](projects/counter_dapp-contracts/README.md)
-   - Frontend Application: [counter_dapp-frontend](projects/counter_dapp-frontend/README.md)
+## Video Walkthrough
 
-> This project is structured as a monorepo, refer to the [documentation](https://github.com/algorandfoundation/algokit-cli/blob/main/docs/features/project/run.md) to learn more about custom command orchestration via `algokit project run`.
+🔝 [Watch on YouTube](https://youtu.be/-iRCX6m3SbY)
 
-### Subsequently
 
-1. If you update to the latest source code and there are new dependencies, you will need to run `algokit project bootstrap all` again.
-2. Follow step 3 above.
+## 🚀 Setup Instructions
 
-## Tools
+### Initial Setup
 
-This project makes use of Python and React to build Algorand smart contracts and to provide a base project configuration to develop frontends for your Algorand dApps and interactions with smart contracts. The following tools are in use:
+ **Clone the Repository**
 
-- Algorand, AlgoKit, and AlgoKit Utils
-- Python dependencies including Poetry, Black, Ruff or Flake8, mypy, pytest, and pip-audit
-- React and related dependencies including AlgoKit Utils, Tailwind CSS, daisyUI, use-wallet, npm, jest, playwright, Prettier, ESLint, and Github Actions workflows for build validation
+   ```bash
+   git clone <your-repo-link>
+   cd counter_dapp
+   ```
 
-### VS Code
+**Install Docker**
+   Make sure Docker is installed and running:
+   🔝 [Download Docker](https://www.docker.com/)
 
-It has also been configured to have a productive dev experience out of the box in [VS Code](https://code.visualstudio.com/), see the [backend .vscode](./backend/.vscode) and [frontend .vscode](./frontend/.vscode) folders for more details.
+**Install AlgoKit**
+   Follow the official guide to install AlgoKit:
+   🔝 [Install AlgoKit](https://github.com/algorandfoundation/algokit-cli#install)
 
-## Integrating with smart contracts and application clients
+**Bootstrap the Project**
 
-Refer to the [counter_dapp-contracts](projects/counter_dapp-contracts/README.md) folder for overview of working with smart contracts, [projects/counter_dapp-frontend](projects/counter_dapp-frontend/README.md) for overview of the React project and the [projects/counter_dapp-frontend/contracts](projects/counter_dapp-frontend/src/contracts/README.md) folder for README on adding new smart contracts from backend as application clients on your frontend. The templates provided in these folders will help you get started.
-When you compile and generate smart contract artifacts, your frontend component will automatically generate typescript application clients from smart contract artifacts and move them to `frontend/src/contracts` folder, see [`generate:app-clients` in package.json](projects/counter_dapp-frontend/package.json). Afterwards, you are free to import and use them in your frontend application.
+   ```bash
+   algokit project bootstrap all
+   ```
 
-The frontend starter also provides an example of interactions with your CounterContractClient in [`AppCalls.tsx`](projects/counter_dapp-frontend/src/components/AppCalls.tsx) component by default.
+**Set Up LocalNet for Smart Contracts**
 
-## Next Steps
+   ```bash
+   cd projects/counter_dapp-contracts
+   algokit generate env-file -a target_network localnet
+   ```
 
-You can take this project and customize it to build your own decentralized applications on Algorand. Make sure to understand how to use AlgoKit and how to write smart contracts for Algorand before you start.
+**Build the Project**
+
+   ```bash
+   algokit project run build
+   ```
+
+**Notion Link for windows os** https://www.notion.so/AlgoKit-Full-Setup-on-Windows-with-WSL-241fe3ff0a208039a2bae351fd11d0b5
+
+
+## 🛠️ Tools Used
+
+### ⚙️ Backend / Smart Contracts
+
+* **Python**
+* **TypeScript**
+* **AlgoKit** & **AlgoKit Utils**
+
+### 💻 Frontend
+
+* **React**
+* **Tailwind CSS**
+
+## 🔗 Quick Link
+
+* **Smart Contracts:**
+  [`projects/counter_dapp-contracts`](projects/counter_dapp-contracts/README.md)
+
+* **Frontend App:**
+  [`projects/counter_dapp-frontend`](projects/counter_dapp-frontend/README.md)
+
+
